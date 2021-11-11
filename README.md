@@ -31,6 +31,7 @@ To add the EmbeddableVoiceAssistant component to your react-native project:
 ## Permissions
 Android: 
     add following lines to your AndroidManifest.xml:
+
     ```
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -43,6 +44,7 @@ Android:
 
 iOS:
     add following lines to your Info.plist file:
+    
     ```
         <key>NSMicrophoneUsageDescription</key>
         <string>Description of why you require the use of the microphone</string>
