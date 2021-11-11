@@ -9,7 +9,10 @@ To add the EmbeddableVoiceAssistant component to your react-native project:
 3. Run command "npm install ./embeddable_voice_assistant_rn-0.0.1.tgz" 
 
 ## Usage
-1. Import component to your script "import ChatComponent from 'embeddable_voice_assistant_rn/src/ChatComponent';"
+1. Import component to your script
+```
+ "import ChatComponent from 'embeddable_voice_assistant_rn/src/ChatComponent';"
+ ```
 2. Add ChatComponent to your render method:
 ```
     render(){
@@ -28,6 +31,7 @@ To add the EmbeddableVoiceAssistant component to your react-native project:
 ## Permissions
 Android: 
     add following lines to your AndroidManifest.xml:
+    ```
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
         <queries>
@@ -35,13 +39,16 @@ Android:
                 <action android:name="android.speech.RecognitionService"/>
             </intent>
         </queries>
+    ```
 
 iOS:
     add following lines to your Info.plist file:
+    ```
         <key>NSMicrophoneUsageDescription</key>
         <string>Description of why you require the use of the microphone</string>
         <key>NSSpeechRecognitionUsageDescription</key>
         <string>Description of why you require the use of the speech recognition</string>
+    ```
 
 ## Example
 You can run project from this repository as an example of Embeddable voice assistant
