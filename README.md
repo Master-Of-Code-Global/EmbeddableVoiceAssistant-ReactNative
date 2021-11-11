@@ -12,11 +12,13 @@ To add the EmbeddableVoiceAssistant component to your react-native project:
 1. Import component to your script "import ChatComponent from 'embeddable_voice_assistant_rn/src/ChatComponent';"
 2. Add ChatComponent to your render method:
     render(){
-     return(<ChatComponent 
+     return(
+        <ChatComponent 
           DirectLineSecretKey="Place your directline token here"
           HeaderTitle="Place your header title here"
           HeaderIconPass="Place path to your logo here"
-      />);
+        />
+      );
     }
 3. The communication with bot is done via Direct Line channel. You can find "YOUR_TOKEN" of your bot [there](https://portal.azure.com/#home). 
    Open a resource with type Bot Channels Registration, select Settings -> Channels -> Direct Line -> Edit. Put one Secret key to "secretToken" parameter for connecting with your bot.
